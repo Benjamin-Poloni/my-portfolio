@@ -16,9 +16,9 @@ export default function Home() {
     
       </section>
      <Image
-            className="rounded-full h-12 w-12"
+            className="h-0 w-0 z-0"
             
-              src='https://my-portfolio-benjamin-poloni.vercel.app'
+              src='/og-image.png'
              alt="Imagen de Benjamin"
              width={0}
              height={0}
