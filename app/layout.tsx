@@ -12,7 +12,7 @@ export const metadata = {
     siteName: "Benjamin Poloni Portfolio",
     images: [
       {
-        url: "/og-image.png", 
+        url: "https://my-portfolio-benjamin-poloni.vercel.app/og-image.png", 
         width: 1200,
         height: 630,
       },
