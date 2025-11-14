@@ -1,9 +1,9 @@
-import image from "@/public/image.png"
+import image from "@/public/MyImagen.png"
 import Image from "next/image";
 export default function HeaderC(){
 
     return(
-        <header className="flex justify-between items-center py-3 ">
+        <header className="flex  justify-between items-center py-3 z-10 ">
             <Image
             className="rounded-full h-12 w-12"
             

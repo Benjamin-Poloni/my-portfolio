@@ -1,6 +1,7 @@
 
 import Link from "next/link";
 import TimeLine from "./ui/timeLine";
+import ProyectsCard from "./ui/proyectsCard";
 
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
       </section>
 
       <TimeLine />
+      
+      <ProyectsCard />
     </main>
   );
 }

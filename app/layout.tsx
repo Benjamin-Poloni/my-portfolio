@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
        
         <title>Benjamin-Poloni-Portfolio</title>
@@ -18,7 +18,6 @@ export default function RootLayout({
       <body
         className=" max-w-3xl mx-auto min-h-dvh [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] p-3 md:p-1 "
       >
-        
         <HeaderC/>
           
         
