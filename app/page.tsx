@@ -2,6 +2,7 @@
 import Link from "next/link";
 import TimeLine from "./ui/timeLine";
 import ProyectsCard from "./ui/proyectsCard";
+import Techs from "./ui/techs";
 
 
 export default function Home() {
@@ -13,10 +14,11 @@ export default function Home() {
       <p className="mb-3"><span className="text-sky-200">Soy de Durazno, Uruguay. </span> Me apasiona el desarrollo web, especialmente el desarrollo de aplicaciones back-end.</p>
     
       </section>
-
+      <ProyectsCard />
+      <Techs />
       <TimeLine />
 
-      <ProyectsCard />
+      
     </main>
   );
 }

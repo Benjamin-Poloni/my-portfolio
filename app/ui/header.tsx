@@ -13,8 +13,9 @@ export default function HeaderC(){
             
             <nav className="flex flex-row gap-x-6 opacity-70 ">
                 <a href="#top"  className="text-white hover:text-sky-500 hover:scale-110 transition-transform">Home</a>
-                <a href="#about" className="text-white hover:text-sky-500 hover:scale-110 transition-transform">About</a>
                 <a href="#proyects" className="text-white hover:text-sky-500 hover:scale-110 transition-transform">Proyects</a>
+                <a href="#technologies" className="text-white hover:text-sky-500 hover:scale-110 transition-transform">Technologies</a>
+                <a href="#about" className="text-white hover:text-sky-500 hover:scale-110 transition-transform">About</a>
                 <a href="#contact" className="text-white hover:text-sky-500 hover:scale-110 transition-transform">Contact</a>
             </nav>
 

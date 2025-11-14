@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProyectsCard(){
     return(
-        <div className="mt-40" id="proyects">
+        <div className="mt-20 mb-20" id="proyects">
             <h1 className="text-3xl font-bold mb-4">Proyectos</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-15 text-pretty items-stretch ">
                 
