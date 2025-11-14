@@ -3,6 +3,7 @@ import Link from "next/link";
 import TimeLine from "./ui/timeLine";
 import ProyectsCard from "./ui/proyectsCard";
 import Techs from "./ui/techs";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -14,6 +15,14 @@ export default function Home() {
       <p className="mb-3"><span className="text-sky-200 font-semibold">Soy de Durazno, Uruguay. </span> Me apasiona el desarrollo web, especialmente el desarrollo de aplicaciones back-end.</p>
     
       </section>
+     <Image
+            className="rounded-full h-12 w-12"
+            
+              src='https://my-portfolio-benjamin-poloni.vercel.app'
+             alt="Imagen de Benjamin"
+             width={0}
+             height={0}
+            />
       <ProyectsCard />
       <Techs />
       <TimeLine />
