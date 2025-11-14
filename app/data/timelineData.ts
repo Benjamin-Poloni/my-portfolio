@@ -4,7 +4,7 @@ export const timelineData: TimeLine[] = [
   {
     title: "Inicio de mis estudios en programcion ",
     date: "2020",
-    description: "Comencé mis estudios en el Polo Tecnológico de Durazno, donde adquirí los conocimientos básicos e introducción al mundo de las tecnologías de la información. Este fue mi primer acercamiento al desarrollo y al ecosistema IT.",
+    description: "Comencé mis estudios en el Polo Tecnológico de Durazno, donde adquirí los conocimientos básicos e introducción al mundo de las TI. Este fue mi primer acercamiento al desarrollo y al ecosistema IT.",
     
   },
   {
