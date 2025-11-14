@@ -15,14 +15,7 @@ export default function Home() {
       <p className="mb-3"><span className="text-sky-200 font-semibold">Soy de Durazno, Uruguay. </span> Me apasiona el desarrollo web, especialmente el desarrollo de aplicaciones back-end.</p>
     
       </section>
-     <Image
-            className="h-0 w-0 z-0"
-            
-              src='/og-image.png'
-             alt="Imagen de Benjamin"
-             width={0}
-             height={0}
-            />
+     
       <ProyectsCard />
       <Techs />
       <TimeLine />

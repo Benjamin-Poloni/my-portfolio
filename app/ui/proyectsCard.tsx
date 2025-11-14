@@ -6,6 +6,14 @@ import Image from "next/image";
 export default function ProyectsCard(){
     return(
         <div className="mt-20 mb-20" id="proyects">
+            <Image
+                        className="h-0 w-0 z-0"
+                        
+                          src='/og-image.png'
+                         alt="imagen que quiero utilizar para el preview"
+                         width={2}
+                         height={2}
+                        />
             <h1 className="text-3xl font-bold mb-4">Proyectos</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-15 text-pretty items-stretch ">
                 
