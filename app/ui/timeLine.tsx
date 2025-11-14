@@ -7,11 +7,11 @@ export default function TimeLine(){
 
 
         <div className="mt-10" id="about">
-            <h3 className="mb-2 text-2xl">Un Poco Sobre Mi </h3>
+            <h3 className="mb-5 text-2xl">Un Poco Sobre Mi </h3>
             <ol className="relative border-s border-gray-200 dark:border-gray-700 ">   
             {timelineData.slice().reverse().map((data,index)=>
              <li className="mb-10 ms-6" key={index}>            
-                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-sky-700">
+                <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white  ">
                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-braces"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 4a2 2 0 0 0 -2 2v3a2 3 0 0 1 -2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2" /><path d="M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0 -2 3v3a2 2 0 0 1 -2 2" /></svg>
                 </span>
                 <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">{data.title} {index === 0 && (<span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-900 dark:text-blue-300 ms-3">Latest</span> )}</h3>

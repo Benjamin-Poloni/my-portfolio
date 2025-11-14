@@ -17,6 +17,7 @@ export default function ProyectsCard(){
                             <Link
                                 href={data.link ?? '#'}
                                 target="_blank"
+                                aria-label="Ir al repositorio"
                             >
                                <Image 
                             width={200}
