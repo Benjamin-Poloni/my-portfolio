@@ -7,7 +7,7 @@ export default function Contact(){
         <div id="contact" className="mt-30">
             <div>
                 <h3 className="text-3xl font-bold ">Contactame</h3>
-                <section className="my-3 bg-white/60 backdrop-blur-sm rounded-2xl sm:text-2xl p-4">
+                <section className="my-3 bg-white/60 backdrop-blur-sm rounded-2xl sm:text-2xl p-4 break-all">
                     <ol className="grid grid-cols-1 gap-6 space-y-2">
                         <li className="text-gray-700">
                             Telefono:
