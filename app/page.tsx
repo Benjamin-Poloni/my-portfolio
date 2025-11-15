@@ -3,7 +3,8 @@ import Link from "next/link";
 import TimeLine from "./ui/timeLine";
 import ProyectsCard from "./ui/proyectsCard";
 import Techs from "./ui/techs";
-import Image from "next/image";
+
+import Contact from "./ui/contact";
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
       <ProyectsCard />
       <Techs />
       <TimeLine />
-
+      <Contact />
       
     </main>
   );
