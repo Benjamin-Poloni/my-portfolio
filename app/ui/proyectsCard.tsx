@@ -27,7 +27,7 @@ export default async function ProyectsCard(){
                         {data.proyectoImagen.map((imagen, index)=>(
                             <section key={index} className="p-6">
                             <Link
-                                href={data.link ?? '#'}
+                                href={data.repoLink ?? '#'}
                                 target="_blank"
                                 aria-label="Ir al repositorio"
                             >

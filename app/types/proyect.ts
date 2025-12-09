@@ -5,7 +5,7 @@ export type Proyect = {
     nombre:string;
     descripcion:string;
     cardDescription:string;
-    link?:string;
+    repoLink?:string;
     proyectoImagen:{
         alt:string;
         url:string;
