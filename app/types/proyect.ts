@@ -1,13 +1,14 @@
-import { StaticImageData } from "next/image";
+import { tech } from "./tech";
+
 
 export type Proyect = {
     nombre:string;
     descripcion:string;
-    descripcionCard:string;
+    cardDescription:string;
     link?:string;
-    img:{
+    proyectoImagen:{
         alt:string;
-        src:string;
+        url:string;
     }[];
-    tecnologias:string[];
+    tech:tech[];
 }

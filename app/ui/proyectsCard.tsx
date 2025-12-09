@@ -1,9 +1,10 @@
 
 import Link from "next/link";
-import  {ProyectData}  from "../data/proyectData";
+import { getPublicProyects } from "../services/proyectService";
 import Image from "next/image";
 
-export default function ProyectsCard(){
+export default async function ProyectsCard(){
+    const proyects = await getPublicProyects();
     return(
         <div className="mt-20 mb-20" id="proyects">
         <Link href={'https://my-portfolio-benjamin-poloni.vercel.app'}>
@@ -20,11 +21,11 @@ export default function ProyectsCard(){
             <h1 className="text-3xl font-bold mb-4">Proyectos</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-15 text-pretty items-stretch ">
                 
-                {ProyectData.map((data, index)=>(
+                {proyects.map((data, index)=>(
                     <section key={index} className="h-full fle felx-col bg-white/20 gap-6 w-full backdrop-blur-2xl  p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-102 transition-transform duration-300 text-center flex flex-col items-center border border-white/20">
                         <h2 className="text-2xl font-semibold text-center min-h-[70px] ">{data.nombre}</h2>
-                        {data.img.map((img, index)=>
-                        <section key={index} className="p-6">
+                        {data.proyectoImagen.map((imagen, index)=>(
+                            <section key={index} className="p-6">
                             <Link
                                 href={data.link ?? '#'}
                                 target="_blank"
@@ -33,23 +34,26 @@ export default function ProyectsCard(){
                                <Image 
                             width={200}
                             height={200}
-                            alt={img.alt}
-                            src={img.src}
+                            alt={'prueba'}
+                            src={imagen.url}
                             
                             className="rounded-lg object-contain mx-auto mb-4 max-h-[250]"
                         />
                             </Link>
                          
                         </section>
-                        )}
+                        ))
+
+                        }
+                        
                         
                         
                         <ul className="flex flex-wrap gap-2 justify-center mt-3 ">
-                        {data.tecnologias.map((tec,index)=>
-                        <li key={index} className="bg-purple-800/50 text-white px-3 py-1 rounded-full text-sm">{tec}</li>
+                        {data.tech.map((tec,index)=>
+                        <li key={index} className="bg-purple-800/50 text-white px-3 py-1 rounded-full text-sm">{tec.name}</li>
                         )}
                         </ul>
-                        <p className="leading-relaxed mt-4 text-[15px] max-w-md mx-auto">{data.descripcionCard}</p>
+                        <p className="leading-relaxed mt-4 text-[15px] max-w-md mx-auto">{data.cardDescription}</p>
                     </section>
                     
                 ))}
