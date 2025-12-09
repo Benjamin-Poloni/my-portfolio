@@ -34,7 +34,7 @@ export default async function ProyectsCard(){
                                <Image 
                             width={200}
                             height={200}
-                            alt={'prueba'}
+                            alt={imagen.alt}
                             src={imagen.url}
                             
                             className="rounded-lg object-contain mx-auto mb-4 max-h-[250]"
